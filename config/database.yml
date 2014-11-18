@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: vakil@123
+  pool: 5
+  database: all_is_well_development
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default

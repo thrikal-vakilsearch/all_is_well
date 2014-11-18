@@ -1,0 +1,12 @@
+- if flash[:alert].present?
+	.alert.alert-danger{role: 'alert' }
+		%a.close{"data-dismiss" => "alert", :href => "#"} ×
+		%span.glyphicon.glyphicon-exclamation-sign{"aria-hidden" => "true"}
+		%strong
+		= flash[:alert]
+-elsif flash[:notice].present?
+	.alert.alert-success{role: 'alert' }
+		%a.close{"data-dismiss" => "alert", :href => "#"} ×
+		%span.glyphicon.glyphicon-exclamation-sign{"aria-hidden" => "true"}
+		%strong
+		= flash[:notice]
