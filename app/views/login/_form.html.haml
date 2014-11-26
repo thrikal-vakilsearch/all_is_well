@@ -13,8 +13,8 @@
               %label.sr-only{:for => "password"} Password
               %input#key.form-control{:name => "password", :placeholder => "Password", :type => "password"}/
             .checkbox
-              %span.character-checkbox{:onclick => "showPassword()"}
-              %span.label Show password
+              %input#remember_me{:name => "remember_me", :type => "checkbox"}
+              %span.label Remember Me
             %input#btn-login.btn.btn-custom.btn-lg.btn-block{:type => "submit", :value => "Log in"}/
           %a.forget{"data-target" => ".forget-modal", "data-toggle" => "modal", :href => "javascript:;"} Forgot your password?
           %hr/

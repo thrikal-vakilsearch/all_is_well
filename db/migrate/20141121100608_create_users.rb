@@ -16,8 +16,9 @@ class CreateUsers < ActiveRecord::Migration
     t.string   "last_name"
     t.string   "email"
     t.string   "phone"
+    t.string   "password_digest"
+    t.string   "auth_token"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "password_digest"
   end
 end
